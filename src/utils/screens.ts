@@ -1,5 +1,6 @@
 export const NAVIGATOR_BOTTOM_TAB = "Bottom Tab";
-export const NAVIGATOR_LOGIN ="Landing Stack";
+export const NAVIGATOR_LOGIN ="Login Stack";
+export const NAVIGATOR_REGISTER = "Register Stack";
 
 export const BOTTOM_TAB_SCREENS = {
 	HOME_SCREEN: "Home",

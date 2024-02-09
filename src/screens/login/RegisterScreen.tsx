@@ -6,13 +6,14 @@ import { StackScreenProps } from "@react-navigation/stack";
 import LottieView from "lottie-react-native";
 
 import { NAVIGATOR_BOTTOM_TAB } from "@utils/screens";
+import { NAVIGATOR_LOGIN } from "@utils/screens";
 
 
 type Props = StackScreenProps<ParamListBase, "Register">;
 
 const RegisterScreen: React.FC<Props> = ({ navigation }) => {
     const handlePress = () => {
-        navigation.replace(NAVIGATOR_BOTTOM_TAB);
+        navigation.replace(NAVIGATOR_LOGIN);
     };
 
 	return (

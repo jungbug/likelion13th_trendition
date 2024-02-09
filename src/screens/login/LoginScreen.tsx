@@ -7,7 +7,7 @@ import { StackScreenProps } from "@react-navigation/stack";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import { NAVIGATOR_BOTTOM_TAB } from "@utils/screens";
-import RegisterScreen from "./RegisterScreen";
+import { NAVIGATOR_REGISTER } from "@utils/screens";
 
 type Props = StackScreenProps<ParamListBase, "Login">;
 
@@ -16,7 +16,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
         navigation.replace(NAVIGATOR_BOTTOM_TAB);
     };
     const registerHandler = () => {
-        navigation.replace('Register');
+        navigation.replace(NAVIGATOR_REGISTER);
     };
 
 	return (
