@@ -4,7 +4,6 @@ import {Text, View} from "react-native";
 
 
 import {useNavigation} from "@react-navigation/native";
-import moment from "moment";
 
 import useLocalize from "@hooks/useLocalize";
 
@@ -17,7 +16,6 @@ const FeedScreen = () => {
 			headerTitle: translate("post"),
 		});
 	}, [navigation, translate]);
-
 
 	return (
 		<View className="h-full w-full justify-center px-4">

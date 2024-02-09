@@ -3,34 +3,29 @@ import { View , Text, Button} from "react-native";
 
 import { ParamListBase } from "@react-navigation/native";
 import { StackScreenProps } from "@react-navigation/stack";
-
-import { createStackNavigator } from "@react-navigation/stack";
+import LottieView from "lottie-react-native";
 
 import { NAVIGATOR_BOTTOM_TAB } from "@utils/screens";
-import RegisterScreen from "./RegisterScreen";
 
-type Props = StackScreenProps<ParamListBase, "Login">;
 
-const LoginScreen: React.FC<Props> = ({ navigation }) => {
+type Props = StackScreenProps<ParamListBase, "Register">;
+
+const RegisterScreen: React.FC<Props> = ({ navigation }) => {
     const handlePress = () => {
         navigation.replace(NAVIGATOR_BOTTOM_TAB);
-    };
-    const registerHandler = () => {
-        navigation.replace('Register');
     };
 
 	return (
         <View className="h-full w-full justify-center px-4">
 			<Text className="text-2xl font-bold text-center mt-8">
-                loginScreen
+                registerScreen
 			</Text>
             <Button title="클릭하세요" onPress={handlePress} />
-            <Button title="회원가입" onPress={registerHandler}></Button>
 		</View>
 
 	);
 };
 
-export default LoginScreen;
+export default RegisterScreen;
 
 
