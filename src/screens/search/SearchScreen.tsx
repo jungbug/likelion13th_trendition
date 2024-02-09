@@ -16,21 +16,21 @@ const HomeScreen = () => {
     // TODO: This can be removed or changed according to project needs
     useLayoutEffect(() => {
         navigation.setOptions({
-            headerTitle: translate("main"),
+            headerTitle: translate("search"),
         });
     }, [navigation, translate]);
 
 
     return (
         <View className="h-full w-full justify-center px-4">
-            <TextInput
+            {/* <TextInput
                 style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
                 className="text-2xl font-bold text-center mt-8"
                 onChangeText={text => setText(text)}
                 value={text}
-            />
+            /> */}
             <Text className="text-2xl font-bold text-center mt-8">
-                jungbug
+                inputScreen
             </Text>
         </View>
     );

@@ -4,5 +4,6 @@ export const NAVIGATOR_LANDING ="Landing Stack";
 export const BOTTOM_TAB_SCREENS = {
 	HOME_SCREEN: "Home",
 	SEARCH_SCREEN: "Search",
-	MENU_SCREEN: "Menu",
+	POST_SCREEN: "Post",
+	ACCOUNT_SCREEN: "Account",
 };

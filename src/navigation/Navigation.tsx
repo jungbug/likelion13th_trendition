@@ -1,11 +1,9 @@
 import React from "react";
-
-import {NavigationContainer} from "@react-navigation/native";
-import {createStackNavigator} from "@react-navigation/stack";
-
-import {NAVIGATOR_BOTTOM_TAB, NAVIGATOR_LANDING} from "@utils/screens";
-
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import loginScreen from "@screens/login/LoginScreen";
 import BottomTabNavigation from "./BottomTabNavigation";
+import { NAVIGATOR_BOTTOM_TAB, NAVIGATOR_LANDING } from "@utils/screens";
 
 const Stack = createStackNavigator();
 
@@ -16,11 +14,11 @@ const NAVIGATION_OPTIONS = {
 const Navigation = () => (
 	<NavigationContainer>
 		<Stack.Navigator>
-			{/* <Stack.Screen
+			<Stack.Screen
 				name={NAVIGATOR_LANDING}
-				component={LandingScreen}
+				component={loginScreen}
 				options={NAVIGATION_OPTIONS}
-			/> */}
+			/>
 			<Stack.Screen
 				name={NAVIGATOR_BOTTOM_TAB}
 				component={BottomTabNavigation}

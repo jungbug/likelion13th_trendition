@@ -3,9 +3,9 @@ import { TranslationType } from "./types";
 export const translations: TranslationType = {
 	kr: {
 		main: "메인 페이지",
-		sub: "서브 페이지",
 		search: "검색",
-		menu: "메뉴",
+		post: "포스트",
+		account: "계정",
 	},
 	en: {
 		main: "main page",

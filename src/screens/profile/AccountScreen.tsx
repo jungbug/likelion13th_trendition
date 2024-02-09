@@ -8,13 +8,13 @@ import moment from "moment";
 
 import useLocalize from "@hooks/useLocalize";
 
-const HomeScreen = () => {
+const ProfileScreen = () => {
 	const navigation = useNavigation();
 	const {translate} = useLocalize();
 
 	useLayoutEffect(() => {
 		navigation.setOptions({
-			headerTitle: translate("main"),
+			headerTitle: translate("account"),
 		});
 	}, [navigation, translate]);
 
@@ -28,4 +28,4 @@ const HomeScreen = () => {
 	);
 };
 
-export default HomeScreen;
+export default ProfileScreen;
