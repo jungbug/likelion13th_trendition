@@ -21,7 +21,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
     };
 
     return (
-        <View className="flex h-full w-full bg-white">
+        <View className="flex h-full w-full bg-white justify-center">
             <View className="flex flex-col justify-center items-center py-12 px-4">
                 <Text className="text-2xl font-poppins font-bold mb-4 text-gray-800">
                     로그인

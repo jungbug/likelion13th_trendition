@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import start from "@screens/start/startScreen";
 import loginScreen from "@screens/login/LoginScreen";
 import RegisterScreen from "@screens/login/RegisterScreen";
 import BottomTabNavigation from "./BottomTabNavigation";
@@ -15,6 +16,11 @@ const NAVIGATION_OPTIONS = {
 const Navigation = () => (
 	<NavigationContainer>
 		<Stack.Navigator>
+			<Stack.Screen
+				name="start"
+				component={start}
+				options={NAVIGATION_OPTIONS}
+			/>
 			<Stack.Screen
 				name={NAVIGATOR_LOGIN}
 				component={loginScreen}

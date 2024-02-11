@@ -1,5 +1,5 @@
 import React from "react";
-// import Icon from "react-native-vector-icons/MaterialIcons";
+
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
@@ -22,7 +22,7 @@ const TAB_SCREEN_OPTIONS = {
 interface icons {
 	color: string;
 	size: number;
-  }
+}
 
 const HomeIcon: React.FC<icons> = ({ color, size }) => (
 	<Icon name="hexagon" color={color} size={size} />
@@ -46,7 +46,8 @@ const BottomTabNavigation = () => {
 	return (
 		<Tab.Navigator screenOptions={TAB_SCREEN_OPTIONS}>
 			<Tab.Screen
-				name={BOTTOM_TAB_SCREENS.HOME_SCREEN}
+				// name={BOTTOM_TAB_SCREENS.HOME_SCREEN}
+				name="tlqkf"
 				component={HomeScreen}
 				options={{
 					tabBarLabel: translate(TRANSLATION_KEYS.MAIN),

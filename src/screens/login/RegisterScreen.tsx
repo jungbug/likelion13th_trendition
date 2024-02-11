@@ -3,9 +3,6 @@ import { View , Text, Button} from "react-native";
 
 import { ParamListBase } from "@react-navigation/native";
 import { StackScreenProps } from "@react-navigation/stack";
-import LottieView from "lottie-react-native";
-
-import { NAVIGATOR_BOTTOM_TAB } from "@utils/screens";
 import { NAVIGATOR_LOGIN } from "@utils/screens";
 
 
@@ -23,7 +20,6 @@ const RegisterScreen: React.FC<Props> = ({ navigation }) => {
 			</Text>
             <Button title="클릭하세요" onPress={handlePress} />
 		</View>
-
 	);
 };
 
